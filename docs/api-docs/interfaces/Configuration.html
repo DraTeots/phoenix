@@ -141,6 +141,13 @@
                                 </li>
                                 <li>
                                             <span class="modifier">Optional</span>
+                                        <a href="#presetAnimations" 
+>
+                                            presetAnimations
+                                        </a>
+                                </li>
+                                <li>
+                                            <span class="modifier">Optional</span>
                                         <a href="#presetViews" 
 >
                                             presetViews
@@ -469,6 +476,50 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
+                                        <a name="presetAnimations"></a>
+                                        <span class="name "><b>presetAnimations</b>
+                                            <a href="#presetAnimations">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>presetAnimations:         <code><a href="../interfaces/AnimationPreset.html" target="_self" >AnimationPreset[]</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="../interfaces/AnimationPreset.html" target="_self" >AnimationPreset[]</a></code>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Optional</i>
+                                        </td>
+                                    </tr>
+
+
+
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Preset views for switching event display camera.</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
                                         <a name="presetViews"></a>
                                         <span class="name "><b>presetViews</b>
                                             <a href="#presetViews">
@@ -517,6 +568,7 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { PresetView } from &#x27;../models/preset-view.model&#x27;;
 import { EventDataLoader } from &#x27;../../loaders/event-data-loader&#x27;;
 import { PhoenixMenuNode } from &#x27;../../managers/ui-manager/phoenix-menu/phoenix-menu-node&#x27;;
+import { AnimationPreset } from &#x27;../../managers/three-manager/animations-manager&#x27;;
 
 /**
  * Configuration of the event display.
@@ -526,6 +578,8 @@ export interface Configuration {
   defaultView?: number[];
   /** Preset views for switching event display camera. */
   presetViews?: PresetView[];
+  /** Preset views for switching event display camera. */
+  presetAnimations?: AnimationPreset[];
   /** Event data loader responsible for processing and loading event data. */
   eventDataLoader?: EventDataLoader;
   /** Root node of the phoenix menu. */
