@@ -1,0 +1,3 @@
+97 error HttpError: Bad credentials
+97 error     at /Users/emoyse/LocalDocuments/phoenix/node_modules/@octokit/request/dist-node/index.js:122:21
+97 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
